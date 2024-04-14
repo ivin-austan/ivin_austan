@@ -1,0 +1,64 @@
+.tabs {
+  color: rgb(0 0 0 / 50%);
+  font-weight: 700;
+  font-style: bolder;
+  font-variation-settings: "slnt" 0;
+  margin-left: -170px;
+  position: relative;
+  display: flex;
+  transition: transform 0.2s;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+}
+body{
+    overflow: hidden;
+}
+.name {
+  font-weight: 700;
+  font-size: larger;
+  font-variation-settings: "slnt" 0;
+  margin-left: -125%;
+
+}
+.tabs:hover {
+  transform: scale(1.1);
+      color: #5150ed;
+}
+.intro{
+      margin:18% 25% 0% 20%;
+     font-weight: 600;
+}
+.content{
+   font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+.title{ 
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 20%;
+  margin-top: 15px;
+}
+.titleupdate{
+  color: #b51ba5;
+}
+.desc{
+  margin-left: 20%;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.resume-button{
+  background: #eee;
+    color: #5b5b5b;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 13px 29px;
+    font-size: 14px;
+    line-height: normal;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
