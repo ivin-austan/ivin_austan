@@ -52,10 +52,10 @@ const Content = () => {
             &nbsp; Download Resume
           </button>
           <a
-            href="https://www.linkedin.com/in/ivinaustana/"
+             href="https://www.linkedin.com/in/ivinaustana/"
             target="_blank"
             rel="noopener noreferrer"
-            className="desc linkedin-button"
+            className="desc linkedin-button" 
           >
             <FaLinkedin style={{ marginBottom: "3px" }} />
             &nbsp; Digital portfolio

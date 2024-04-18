@@ -1,14 +1,11 @@
 .tabs {
-  color: rgb(0 0 0 / 50%);
+   color: rgb(0 0 0 / 50%);
   font-weight: 700;
-  font-style: bolder;
   font-variation-settings: "slnt" 0;
-  margin-left: -170px;
-  position: relative;
   display: flex;
   transition: transform 0.2s;
   cursor: pointer;
-  justify-content: center;
+ justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
@@ -20,7 +17,7 @@ body {
   font-weight: 700;
   font-size: larger;
   font-variation-settings: "slnt" 0;
-  margin-left: -125%;
+
 }
 .tabs:hover {
   transform: scale(1.1);
@@ -73,6 +70,15 @@ body {
   border: 1px solid transparent;
   text-decoration: none;
   margin-left: 5%;
+}
+
+@media screen and (max-width: 522px) {
+  .linkedin-button {
+    display: block;
+    margin-top: 10px; /* Adjust margin as needed */
+    margin-left: 20%;
+    margin-right: 13rem;
+  }
 }
 
 .expe {
@@ -161,7 +167,8 @@ h6 {
 .loadingexp {
   color: #3c4b409c !important;
   font-weight: 200;
-  margin-left: 25%;
+  display: flex;
+  justify-content: center;
 }
 .footer {
   background-color: #343a40;

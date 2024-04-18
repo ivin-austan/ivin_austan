@@ -4,19 +4,15 @@ import { FaRegUser } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div>
+    <>
       <Navbar fixed="top" style={{backgroundColor:"white"}}>
         <Container>
-          <Navbar.Brand>
-            <Col md={2}>
-              <FaRegUser style={{ fontSize: "34px", textAlign: "right" }} />
+            <Col md={2} style={{textAlign:'right', paddingRight:'2rem'}}>
+              <FaRegUser style={{ fontSize: "34px" }} />
             </Col>
-          </Navbar.Brand>
-          <Navbar.Brand>
             <Col md={4} className="name">
               Ivin Austan
             </Col>
-          </Navbar.Brand>
           <Col md={1} className="tabs">
             About
           </Col>
@@ -32,7 +28,7 @@ const Header = () => {
           <Col md={2} className="tabs"></Col>
         </Container>
       </Navbar>
-    </div>
+    </>
   );
 }
 
