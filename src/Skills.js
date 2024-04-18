@@ -20,7 +20,7 @@ const MySkills = () => {
       <h2 className="skills">SKILLS</h2>
       <h4 className="myskills">MY SKILLS</h4>
       <Row className="skillcontainer">
-        <Col md={4} style={{ paddingBottom: "5%" }}>
+        <Col md={4} style={{ paddingBottom: "5%", marginLeft: "-10%" }}>
           <div className="progresscontainer">
             <h6>React.js</h6>
             <h6>85%</h6>
@@ -172,9 +172,9 @@ const MySkills = () => {
           </div>
         </Col>
       </Row>
-      <h7 className='loadingexp'>
-        * I've incorporated loading bars as I hone my skills in
-        achieving fully filled progress bars
+      <h7 className="loadingexp">
+        * I've incorporated loading bars as I hone my skills in achieving fully
+        filled progress bars
       </h7>
     </div>
   );
