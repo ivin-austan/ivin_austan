@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <Navbar className={scroll ? "navbar scrolled" : "navbar"}>
+      <Navbar sticky = 'top' className={scroll ? "navbar scrolled" : "navbar"}>
         <Container>
           <Col md={2} style={{ textAlign: "right", paddingRight: "2rem" }}>
             <FaRegUser style={{ fontSize: "34px" }} />
