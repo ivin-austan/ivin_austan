@@ -172,10 +172,10 @@ const MySkills = () => {
           </div>
         </Col>
       </Row>
-      <h7 className="loadingexp">
+      <span className="loadingexp">
         * I've incorporated loading bars as I hone my skills in achieving fully
         filled progress bars
-      </h7>
+      </span>
     </div>
   );
 };

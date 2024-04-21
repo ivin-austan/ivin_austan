@@ -46,10 +46,10 @@ const Footer = () => {
         </a>
       </div>
       <br />
-      <h7 className="footer-content">
+      <span className="footer-content">
         <FaRegCopyright />All rights reserved.
         &nbsp;Developed by Ivin Austan
-      </h7>
+      </span>
     </div>
   );
 }

@@ -1,24 +1,31 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container, Navbar, Col } from "react-bootstrap";
 import { FaRegUser } from "react-icons/fa";
+import { Contextreact } from './Context';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
+
+  const {scroll} = useContext(Contextreact);
+
   return (
     <>
-      <Navbar fixed="top" style={{backgroundColor:"white"}}>
+      <Navbar className={scroll ? "navbar scrolled" : "navbar"}>
         <Container>
-            <Col md={2} style={{textAlign:'right', paddingRight:'2rem'}}>
-              <FaRegUser style={{ fontSize: "34px" }} />
-            </Col>
-            <Col md={4} className="name">
-              Ivin Austan
-            </Col>
+          <Col md={2} style={{ textAlign: "right", paddingRight: "2rem" }}>
+            <FaRegUser style={{ fontSize: "34px" }} />
+          </Col>
+          <Col md={4} className="name">
+            <Link to='/'>Ivin Austan</Link>
+          </Col>
           <Col md={1} className="tabs">
             About
           </Col>
+
           <Col md={1} className="tabs">
-            Projects
+            <Link to="/projects">Projects</Link>
           </Col>
+
           <Col md={1} className="tabs">
             Skills
           </Col>
