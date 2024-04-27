@@ -7,6 +7,7 @@ import MySkills from "./Skills";
 import Footer from "./Footer";
 import Achievements from "./Achievements";
 import Projects from "./Projects";
+import About from "./About";
 
 const App = () => {
   return (
@@ -26,6 +27,15 @@ const App = () => {
           }
         />
         <Route path="/projects" element={<Projects />} />
+        <Route
+          path="/about"
+          element={
+            <>
+              <About />
+              <Footer/>
+            </>
+          }
+        />
       </Routes>
     </div>
   );

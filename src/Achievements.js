@@ -13,7 +13,7 @@ import { MdStars } from "react-icons/md";
 
 const Achievements = () => {
   return (
-    <div>
+    <div id="achievements">
       <h2 className="skills">ACHIEVEMENTS</h2>
       <h4
         className="myskills"

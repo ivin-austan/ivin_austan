@@ -48,7 +48,7 @@ const Footer = () => {
       <br />
       <span className="footer-content">
         <FaRegCopyright />All rights reserved.
-        &nbsp;Developed by Ivin Austan
+        Developed by Ivin Austan
       </span>
     </div>
   );

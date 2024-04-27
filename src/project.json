@@ -1,0 +1,72 @@
+[
+    {
+      "id": 0,
+      "title": "Ivin's Portfolio",
+      "tech": ["React.js", "HTML", "CSS", "React-Bootstrap"],
+      "description":
+        " Realtime chatting application created using React js for frontend, Node for runtime, express for backend and MongoDB for database. Additionally socket.io for bidirectional and event-based communication between a client and a server. We can make realtime communications with anyone around the world.",
+      "codelink": "https://github.com/Ivin1998/ivin_austan",
+      "applink": "https://ivinaustan.netlify.app/",
+      "bgcolor":"#d97d7d"
+    },
+    {
+      "id": 1,
+      "title": "Realtime Chat Application",
+      "tech": ["React.js", "Node.js", "Mongo DB", "Express.js", "Socket.io"],
+      "description":
+        " Realtime chatting application created using React js for frontend, Node for runtime, express for backend and MongoDB for database. Additionally socket.io for bidirectional and event-based communication between a client and a server. We can make realtime communications with anyone around the world.",
+      "codelink": "https://github.com/Ivin1998/Chat-App",
+      "applink": "https://iv-chat.onrender.com/chat",
+       "bgcolor":"#22c87b"
+    },
+    {
+      "id": 2,
+      "title": "Techno Computers",
+      "tech": ["React.js", "Node.js", "Mongo DB", "Express.js"],
+      "description":
+        " E-commerce web application for computer accessories and hardwares which is in real-time use. They can buy products and get delivery. Razorpay payment API is integrated with this application for making the live payment easier.",
+      "codelink": "https://github.com/Tech-Spark-dev/Techno-Computers",
+      "applink": "https://technocomputers.org.in/",
+       "bgcolor":"#9777c9"
+    },
+    {
+      "id": 3,
+      "title": "Shopping Cart",
+      "tech": ["React.js", "HTML", "CSS", "Bootstrap"],
+      "description":
+        "This shopping cart application is a web-based tool that allows users to browse products, add them to a virtual cart, and proceed with the purchase. I designed and implemented an application using React.js that seamlessly handles the features of this app. Additionally, the application dynamically updates the cart summary, showing product details like name, quantity, price, and total cost, as users interact with it.",
+      "codelink": "https://github.com/Ivin1998/Shopping_cart",
+      "applink": "https://ivin-shop.netlify.app/",
+      "bgcolor":"#bc10bc"
+    },
+    {
+      "id": 4,
+      "title": "Customer Relationship Management App",
+      "tech": ["Core PHP", "HTML", "CSS","JavaScript", "Bootstrap"],
+      "description":
+        "This customer relationship management (CRM) app that allows businesses to manage user records, track users and their records, and generate reports. Have separate logins for normal users and for super admins to manage the users and their details. Admin can able to edit, view and download the reports.",
+      "codelink": "https://github.com/Ivin1998/CRM_IN_CORE_PHP",
+      "applink": "",
+      "bgcolor":"#4ba74b"
+    },
+    {
+      "id": 5,
+      "title": "Todo - React Application",
+      "tech": ["React.js", "HTML", "CSS", "React-Bootstrap"],
+      "description":
+        "This customer relationship management (CRM) app that allows businesses to manage user records, track users and their records, and generate reports. Have separate logins for normal users and for super admins to manage the users and their details. Admin can able to edit, view and download the reports.",
+      "codelink": "https://github.com/Ivin1998/Todo_react",
+      "applink": "https://ivin-todo.netlify.app/",
+      "bgcolor":"#e36060"
+    },
+     {
+      "id": 6,
+      "title": "React Calculator",
+      "tech": ["React.js", "HTML", "CSS", "React-Bootstrap"],
+      "description":
+        "This calculator is a web application developed using React.js, a popular JavaScript library for building user interfaces. React.js allows us to create interactive and dynamic components, making the calculator user-friendly and responsive. To structure the user interface, we utilized JSX (JavaScript XML), an extension of JavaScript that allows us to write HTML-like code within our JavaScript files.",
+      "codelink": "https://github.com/Ivin1998/ivincalc/tree/main",
+      "applink": "https://ivin-calc.netlify.app/",
+      "bgcolor":"#8b5ec5"
+    }
+  ]

@@ -30,7 +30,7 @@ const Content = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 250) {
+      if (window.scrollY > 600) {
         setScroll(true);
       } else {
         setScroll(false);

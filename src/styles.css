@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
 }
-.name a{
+.avoidlinkstyle a{
   font-weight: 700;
   font-size: larger;
   font-variation-settings: "slnt" 0;
@@ -63,7 +63,7 @@ body {
   transition: all 0.4s ease;
   border: 1px solid transparent;
 }
-.linkedin-button {
+.linkedin-button,.project-button {
   background: #474559;
   color: #ffffff;
   font-weight: bold;
@@ -242,4 +242,55 @@ h6 {
 
 p{
   color: white;
+}
+.projectcontainer {
+    margin: 3% 5% 2% 4%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    max-width: 100%; /* Ensure container doesn't exceed the width of its parent */
+}
+
+.projectcontainer > .cardstyle {
+    width: calc(50% - 4%); /* Two boxes per row (subtracting margins) */
+    margin-bottom: 2%; /* Adjust margin between boxes */
+    box-sizing: border-box; /* Include padding and border in the box's total width */
+}
+
+
+.projectbody{
+  background-color: #baa3d8;
+}
+.cardstyle{
+  padding: 15px;  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Updated box shadow */
+      margin-top: 2rem;
+    margin-left: 3rem;
+    transition: transform 0.5s ease; 
+}
+.cardstyle:hover {
+  transform: translateY(-5px); /* Add slight lift effect on hover */
+}
+.project-title{
+  font-weight: 600;
+    font-size: large;
+}
+.bio{
+  color: rgb(0 0 0 / 50%);
+    align-items: center;
+    padding-top: 4rem;
+}
+.biointro{
+  color: black !important;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.biocontent{
+     font-weight: 600;
+    color: #494545;
+  padding-bottom: 2rem;
+  display: flex;
+}
+.about{
+  padding-top: 0.75rem;
 }

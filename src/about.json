@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Name",
+    "value": "Ivin Prathish Austan A"
+  },
+  {
+      "label": "Experience",
+      "value": "3.3 years"
+    },
+    {
+      "label": "Age",
+      "value": "26"
+    },
+    {
+        "label": "Phone",
+        "value": "+91 - 9500416612"
+    },
+    {
+      "label": "Birthday",
+      "value": "23-01-1998"
+    },
+  {
+    "label": "E-mail",
+    "value": "a.ivinaustan@gmail.com"
+  },
+  {
+    "label": "Country",
+    "value": "India"
+  },
+  {
+    "label": "State",
+    "value": "Tamilnadu"
+  },
+  {
+    "label": "District",
+    "value": "Kanyakumari"
+  },
+  {
+    "label": "City",
+    "value": "Nagercoil"
+  }
+]

@@ -4,19 +4,20 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 
 const MySkills = () => {
   const html = 90;
-  const css = 85;
-  const react = 85;
-  const node = 75;
-  const express = 75;
-  const php = 85;
-  const jquery = 80;
+  const css = 75;
+  const react = 75;
+  const node = 65;
+  const express = 65;
+  const php = 80;
+  const jquery = 75;
   const Ajax = 80;
   const JavaScript = 80;
-  const Codeigniter = 90;
+  const Codeigniter = 85;
   const MongoDB = 80;
-  const MySQL = 85;
+  const MySQL = 80;
+  
   return (
-    <div>
+    <div id='skills'>
       <h2 className="skills">SKILLS</h2>
       <h4 className="myskills">MY SKILLS</h4>
       <Row className="skillcontainer">
