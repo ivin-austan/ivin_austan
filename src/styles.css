@@ -9,6 +9,14 @@
   align-items: center;
   padding: 20px 0;
 }
+
+@media screen and (max-width : 550px) {
+  .tabs {
+    display: none;
+  }
+}
+
+
 .tabs a {
   text-decoration: none !important;
   color:rgb(0 0 0 / 50%) !important;
