@@ -11,8 +11,20 @@
 }
 
 @media screen and (max-width : 550px) {
-  .tabs {
+  .mobileview {
     display: none;
+  }
+  .skills{
+    font-size: xx-large !important;
+  }
+  .myskills{
+    display: none;
+  }
+  .project-button{
+     display: block; /* Change display to block to move buttons onto separate lines */
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+    margin-bottom: 10px; /* Add some space between buttons */
   }
 }
 

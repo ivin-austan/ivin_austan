@@ -53,10 +53,18 @@ const Header = () => {
             <Link to="/projects">Projects</Link>
           </Col>
 
-          <Col md={1} className="tabs" onClick={scrolltoSkillsandnavigate}>
+          <Col
+            md={1}
+            className="tabs mobileview"
+            onClick={scrolltoSkillsandnavigate}
+          >
             Skills
           </Col>
-          <Col md={1} className="tabs" onClick={()=>scrolltoSkillsandnavigate('achievements')}>
+          <Col
+            md={1}
+            className="tabs mobileview"
+            onClick={() => scrolltoSkillsandnavigate("achievements")}
+          >
             Recognitions
           </Col>
           <Col md={2} className="tabs"></Col>
