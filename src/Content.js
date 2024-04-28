@@ -62,7 +62,7 @@ const Content = () => {
           </h1>
           <h6 className="desc">
             Building a successful product is a challenge. I am highly energetic
-            in user experience <br /> design, interfaces and web development.
+            in user experience design, interfaces and web development.
           </h6>
 
           <button className="desc resume-button" onClick={DowloadResume}>
