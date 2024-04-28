@@ -172,6 +172,10 @@ body {
   justify-content: center;
 }
 
+.skillsprogress{
+  margin-left: -8rem;
+}
+
 .progresscontainer {
   justify-content: space-between;
   display: flex;
@@ -196,6 +200,7 @@ h6 {
   font-weight: 600;
   display: flex;
   justify-content: center;
+  margin-top: 5rem;
 }
 .footer {
   background-color: #343a40;

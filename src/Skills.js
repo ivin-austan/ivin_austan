@@ -17,11 +17,11 @@ const MySkills = () => {
   const MySQL = 80;
   
   return (
-    <div id='skills'>
+    <div id="skills">
       <h2 className="skills">SKILLS</h2>
       <h4 className="myskills">MY SKILLS</h4>
       <Row className="skillcontainer">
-        <Col md={4} style={{ paddingBottom: "5%", marginLeft: "-10%" }}>
+        <Col md={4} className="skillsprogress">
           <div className="progresscontainer">
             <h6>React.js</h6>
             <h6>85%</h6>
@@ -73,7 +73,7 @@ const MySkills = () => {
             />
           </div>
         </Col>
-        <Col md={4} style={{ marginLeft: "-10%" }}>
+        <Col md={4} className="skillsprogress">
           <div className="progresscontainer">
             <h6>Codeigniter</h6>
             <h6>90%</h6>
@@ -120,7 +120,7 @@ const MySkills = () => {
             />
           </div>
         </Col>
-        <Col md={4} style={{ marginLeft: "-10%" }}>
+        <Col md={4} className="skillsprogress">
           <div className="progresscontainer">
             <h6>JavaScript</h6>
             <h6>80%</h6>
