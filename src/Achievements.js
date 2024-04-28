@@ -14,7 +14,7 @@ import { MdStars } from "react-icons/md";
 const Achievements = () => {
   return (
     <div id="achievements">
-      <h2 className="skills">ACHIEVEMENTS</h2>
+      <h2 className="achievestyle">ACHIEVEMENTS</h2>
       <h4
         className="myskills"
         style={{ color: "hsl(144.97deg 86.71% 35.31% / 73%)" }}

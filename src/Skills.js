@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button } from "react-bootstrap";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 const MySkills = () => {
@@ -18,7 +18,23 @@ const MySkills = () => {
   
   return (
     <div id="skills">
-      <h2 className="skills">SKILLS</h2>
+      <Row>
+        <Col md={8}>
+          {" "}
+          <h2 className="skills">
+            SKILLS
+          </h2>
+        </Col>
+        <Col md={4} className="hireme">
+          <Button
+            variant="success"
+            className="contactme"
+            href="https://wa.link/2l2nui"
+          >
+            Contact Me
+          </Button>
+        </Col>
+      </Row>
       <h4 className="myskills">MY SKILLS</h4>
       <Row className="skillcontainer">
         <Col md={4} className="skillsprogress">
