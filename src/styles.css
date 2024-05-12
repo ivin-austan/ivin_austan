@@ -111,7 +111,8 @@ body {
     margin-right: 7rem;
   }
   .project-button{
-    padding: 3px 0px 4px 9px !important;
+    padding: 3px 0px 4px 3px !important;
+    text-align: center;
   }
 }
 
