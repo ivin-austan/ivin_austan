@@ -110,6 +110,9 @@ body {
     margin-left: 20%;
     margin-right: 7rem;
   }
+  .project-button{
+    padding: 3px 0px 4px 9px !important;
+  }
 }
 
 .expe {
