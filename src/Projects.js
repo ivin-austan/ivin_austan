@@ -3,6 +3,8 @@ import Card from "react-bootstrap/Card";
 import projectData from "./project.json";
 import { Contextreact } from "./Context";
 import {useEffect, useContext } from "react";
+import { IoLogoGithub } from "react-icons/io";
+
 
 const Projects = () => {
 
@@ -56,7 +58,9 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              View Code
+              View Code <IoLogoGithub />
+
+
             </a>
             {project.applink && (
               <a
@@ -66,7 +70,7 @@ const Projects = () => {
                 style={{ float: "right" }}
                 rel="noreferrer"
               >
-                Go to Application
+               Try the App.
               </a>
             )}
           </div>
