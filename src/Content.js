@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { Col, Row } from "react-bootstrap";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { LuFileSpreadsheet } from "react-icons/lu";
-import myresume from "./doc/resume.pdf";
 import { FaLinkedin } from "react-icons/fa";
 import { Contextreact } from "./Context";
+import { Typewriter } from 'react-simple-typewriter';
+import { DownloadResume } from "./utility_helper/DownloadResume";
 
 const Content = () => {
   const mytitle = [
@@ -13,19 +14,6 @@ const Content = () => {
     "Software Engineer",
     "Prompt Engineer",
   ];
-
-  const [title] = useState(mytitle);
-  const [titleIndex, setTitleIndex] = useState(0);
-  const DowloadResume = () => {
-    const filePath = myresume; // Path to your resume file in the folder
-    const link = document.createElement("a"); // Create an anchor element
-    link.href = filePath;
-    link.download = `ivin_austan's_resume`; // Specify the file name for download
-    document.body.appendChild(link); // Append the anchor element to the body
-    link.click(); // Trigger the click event on the anchor element
-    document.body.removeChild(link); // Remove the anchor element from the body
-  };
-
   const { setScroll } = useContext(Contextreact);
 
   useEffect(() => {
@@ -44,13 +32,6 @@ const Content = () => {
     };
   }, [setScroll]); // Include setScroll in the dependency array
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTitleIndex((prev) => (prev + 1) % mytitle.length);
-    }, 2000);
-    return () => clearInterval(intervalId);
-  }, [mytitle.length]);
-
   return (
     <div>
       <Row>
@@ -58,14 +39,24 @@ const Content = () => {
           <h5 className="intro">Welcome to my portfolio!</h5>
           <h1 className="title">
             Hey Folks, I'm{" "}
-            <span className="titleupdate"> {title[titleIndex]}</span>
+            <span className="titleupdate">
+              <Typewriter words={mytitle.map((title)=>title
+              )}
+              loop={false}
+              cursor
+              cursorStyle='_'
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              />
+            </span>
           </h1>
           <h6 className="desc">
             Building a successful product is a challenge. I am highly energetic
             in user experience design, interfaces and web development.
           </h6>
 
-          <button className="desc resume-button" onClick={DowloadResume}>
+          <button className="desc resume-button" onClick={DownloadResume}>
             <LuFileSpreadsheet style={{ marginBottom: "3px" }} />
             &nbsp; Download Resume
           </button>
