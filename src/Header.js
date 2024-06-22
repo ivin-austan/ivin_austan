@@ -3,6 +3,8 @@ import { Container, Navbar, Col } from "react-bootstrap";
 import { FaRegUser } from "react-icons/fa";
 import { Contextreact } from './Context';
 import { Link, useNavigate } from 'react-router-dom';
+import ReactGA from 'react-ga4';
+ReactGA.initialize('G-4X6SK1YDXC');
 
 const Header = () => {
 
@@ -10,6 +12,11 @@ const Header = () => {
  const navigate = useNavigate();
 
  const scrolltoSkillsandnavigate = (section) =>{
+
+  ReactGA.event({
+    category: 'Skills',
+    action: 'Clicked this button'
+  });
   setTimeout(() => {
       scrolltoSkills(section);
     }, 200); // Adjust the delay time as needed

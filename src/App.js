@@ -8,8 +8,14 @@ import Footer from "./Footer";
 import Achievements from "./Achievements";
 import Projects from "./Projects";
 import About from "./About";
+import ReactGA from 'react-ga4';
+import { useEffect } from "react";
+ReactGA.initialize('G-4X6SK1YDXC');
 
 const App = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
   return (
     <div className="content">
       <Header />
