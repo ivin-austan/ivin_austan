@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Navbar, Col } from "react-bootstrap";
-import { FaRegUser } from "react-icons/fa";
+import ivin from "./ivin.jpg";
 import { Contextreact } from './Context';
 import { Link, useNavigate } from 'react-router-dom';
 import ReactGA from 'react-ga4';
@@ -35,7 +35,23 @@ const Header = () => {
       skillselection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+  const styles = {
+    iconContainer: {
+        position: 'relative',
+        display: 'inline-block',
+        width: '34px', // Adjust size as needed
+        height: '34px', // Adjust size as needed
+    },
+    image: {
+        width: '90%',
+        height: '100%',
+        borderRadius: '50%', // Make the image circular
+        objectFit: 'fill',  // Ensure the image covers the element
+        position: 'absolute',
+        top: '0',
+        left: '0',
+    },
+};
   return (
     <>
       <Navbar sticky="top" className={scroll ? "navbar scrolled" : "navbar"}>
@@ -46,7 +62,9 @@ const Header = () => {
             style={{ textAlign: "right", paddingRight: "2rem" }}
           >
             <Link to="/">
-              <FaRegUser style={{ fontSize: "34px" }} />
+            <div style={styles.iconContainer}>
+            <img src={ivin} alt="User" style={styles.image} />
+        </div>
             </Link>
           </Col>
           <Col md={4} className="avoidlinkstyle">
