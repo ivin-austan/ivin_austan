@@ -29,7 +29,7 @@ const MySkills = () => {
           <Button
             variant="success"
             className="contactme"
-            href="https://wa.link/2l2nui"
+            href="https://wa.link/s5a0k0"
           >
             Contact Me
           </Button>
