@@ -113,7 +113,7 @@ const Achievements = () => {
           icon={<GiRibbonMedal />}
         >
           <h3 className="vertical-timeline-element-title">
-            Winner in Webpage Desining - SINTACS’17
+            Winner in Webpage Designing - SINTACS’17
           </h3>
           <h6 className="vertical-timeline-element-subtitle">
             Sri Sai Ram Institute of Technology
@@ -134,7 +134,7 @@ const Achievements = () => {
           icon={<MdStars />}
         >
           <h3 className="vertical-timeline-element-title">
-            First Position in Web Desining
+            First Position in Web Designing
           </h3>
           <h6 className="vertical-timeline-element-subtitle">
             St.Joseph's College Of Engineering
