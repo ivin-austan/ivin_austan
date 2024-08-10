@@ -3,18 +3,19 @@ import { Col, Row, Button } from "react-bootstrap";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 const MySkills = () => {
-  const html = 90;
-  const css = 75;
-  const react = 75;
-  const node = 65;
-  const express = 65;
-  const php = 80;
-  const jquery = 75;
-  const Ajax = 80;
-  const JavaScript = 80;
-  const Codeigniter = 85;
-  const MongoDB = 80;
-  const MySQL = 80;
+
+  const html = 80;
+  const css = 65;
+  const react = 65;
+  const node = 60;
+  const express = 60;
+  const php = 70;
+  const jquery = 65;
+  const Ajax = 70;
+  const JavaScript = 65;
+  const Codeigniter = 75;
+  const MongoDB = 55;
+  const MySQL = 75;
   
   return (
     <div id="skills">
@@ -40,7 +41,7 @@ const MySkills = () => {
         <Col md={4} className="skillsprogress">
           <div className="progresscontainer">
             <h6>React.js</h6>
-            <h6>85%</h6>
+            <h6>{react}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -52,7 +53,7 @@ const MySkills = () => {
           </div>
           <div className="progresscontainer">
             <h6>Express.js</h6>
-            <h6>85%</h6>
+            <h6>{express}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -65,7 +66,7 @@ const MySkills = () => {
           </div>
           <div className="progresscontainer">
             <h6>Node.js</h6>
-            <h6>75%</h6>
+            <h6>{node}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -77,7 +78,7 @@ const MySkills = () => {
           </div>
           <div className="progresscontainer">
             <h6>MongoDB</h6>
-            <h6>75%</h6>
+            <h6>{MongoDB}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -92,7 +93,7 @@ const MySkills = () => {
         <Col md={4} className="skillsprogress">
           <div className="progresscontainer">
             <h6>Codeigniter</h6>
-            <h6>90%</h6>
+            <h6>{Codeigniter}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -105,14 +106,14 @@ const MySkills = () => {
           </div>
           <div className="progresscontainer">
             <h6>PHP</h6>
-            <h6>85%</h6>
+            <h6>{php}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar animated now={php} label={`${php}%`} visuallyHidden />
           </div>
           <div className="progresscontainer">
             <h6>jQuery</h6>
-            <h6>80%</h6>
+            <h6>{jquery}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -125,7 +126,7 @@ const MySkills = () => {
           </div>
           <div className="progresscontainer">
             <h6>Ajax</h6>
-            <h6>85%</h6>
+            <h6>{Ajax}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -139,7 +140,7 @@ const MySkills = () => {
         <Col md={4} className="skillsprogress">
           <div className="progresscontainer">
             <h6>JavaScript</h6>
-            <h6>80%</h6>
+            <h6>{JavaScript}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -152,7 +153,7 @@ const MySkills = () => {
           </div>
           <div className="progresscontainer">
             <h6>HTML</h6>
-            <h6>90%</h6>
+            <h6>{html}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -164,7 +165,7 @@ const MySkills = () => {
           </div>
           <div className="progresscontainer">
             <h6>CSS</h6>
-            <h6>85%</h6>
+            <h6>{css}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
@@ -177,7 +178,7 @@ const MySkills = () => {
           </div>
           <div className="progresscontainer">
             <h6>MySQL</h6>
-            <h6>85%</h6>
+            <h6>{MySQL}%</h6>
           </div>
           <div className="pr-bar">
             <ProgressBar
