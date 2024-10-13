@@ -1,6 +1,22 @@
 import React from "react";
 import { Col, Row, Button } from "react-bootstrap";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { FaReact } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { DiCodeigniter } from "react-icons/di";
+import { FaJs } from "react-icons/fa";
+import {  SiMysql,SiJira } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { IoLogoGithub } from "react-icons/io";
+import { SiJquery } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { SiSocketdotio } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
+import { FaLinux } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+
 
 const MySkills = () => {
 
@@ -45,7 +61,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={react}
               label={`${react}%`}
               visuallyHidden
@@ -57,7 +72,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={express}
               label={`${express}%`}
               visuallyHidden
@@ -70,7 +84,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={node}
               label={`${node}%`}
               visuallyHidden
@@ -82,7 +95,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={MongoDB}
               label={`${MongoDB}%`}
               visuallyHidden
@@ -97,7 +109,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={Codeigniter}
               label={`${Codeigniter}%`}
               visuallyHidden
@@ -109,7 +120,7 @@ const MySkills = () => {
             <h6>{php}%</h6>
           </div>
           <div className="pr-bar">
-            <ProgressBar animated now={php} label={`${php}%`} visuallyHidden />
+            <ProgressBar  now={php} label={`${php}%`} visuallyHidden />
           </div>
           <div className="progresscontainer">
             <h6>jQuery</h6>
@@ -117,7 +128,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={jquery}
               label={`${jquery}%`}
               visuallyHidden
@@ -130,7 +140,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={Ajax}
               label={`${Ajax}%`}
               visuallyHidden
@@ -144,7 +153,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={JavaScript}
               label={`${JavaScript}%`}
               visuallyHidden
@@ -157,7 +165,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={html}
               label={`${html}%`}
               visuallyHidden
@@ -169,7 +176,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={css}
               label={`${css}%`}
               visuallyHidden
@@ -182,7 +188,6 @@ const MySkills = () => {
           </div>
           <div className="pr-bar">
             <ProgressBar
-              animated
               now={MySQL}
               label={`${MySQL}%`}
               visuallyHidden
@@ -190,10 +195,64 @@ const MySkills = () => {
           </div>
         </Col>
       </Row>
-      <span className="loadingexp">
-        * I've incorporated loading bars as I hone my skills in achieving fully
-        filled progress bars
-      </span>
+      {/* <div style={{marginTop:"4rem", marginLeft:'20rem'}}>
+        <Row>
+        <Col md={1}>
+        <FaReact style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={1}>
+        <SiRedux style={{fontSize:'2rem'}}/>
+        </Col>
+
+        <Col md={1}>
+        <FaNode style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={1}>
+        <SiSocketdotio style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={1}>
+        <FaPhp style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={1}>
+        <DiCodeigniter style={{fontSize:'2rem'}} />
+        </Col>
+        <Col md={1}>
+        <FaJs style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={1}>
+        <SiJquery style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={1}>
+        <SiMysql style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={1}>
+        <DiMongodb style={{fontSize:'2rem'}}/>
+        </Col>
+        </Row>
+    </div> */}
+    {/* <div>
+        <Row  style={{marginTop:"4rem", marginLeft:'15rem'}}>
+        <Col md={2}>
+        <FaHtml5 style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={2}>
+        <FaLinux style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={2}>
+        <FaBootstrap style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={2}>
+        <FaDocker style={{fontSize:'2rem'}}/>
+        </Col>
+        <Col md={2}>
+        <IoLogoGithub  style={{fontSize:'2rem'}}  />
+        </Col>
+        <Col md={2}>
+        <SiJira style={{fontSize:'2rem'}}/>
+        </Col>
+        </Row>
+        </div> */}
+     
     </div>
   );
 };
