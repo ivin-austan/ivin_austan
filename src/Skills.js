@@ -189,7 +189,7 @@ const MySkills = () => {
           </div>
         </Col>
       </Row>
-      <div style={{marginTop:"4rem", marginLeft:'20rem'}}>
+      <div style={{marginTop:"4rem", marginLeft:'20rem'}} className="skill-icons">
         <Row>
         <Col md={1}>
         <SiRedux style={{fontSize:'2rem'}}/>
