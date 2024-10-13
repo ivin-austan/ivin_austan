@@ -1,13 +1,7 @@
 import React from "react";
 import { Col, Row, Button } from "react-bootstrap";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import { FaReact } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
-import { FaPhp } from "react-icons/fa";
-import { DiCodeigniter } from "react-icons/di";
-import { FaJs } from "react-icons/fa";
 import {  SiMysql,SiJira } from "react-icons/si";
-import { DiMongodb } from "react-icons/di";
 import { IoLogoGithub } from "react-icons/io";
 import { SiJquery } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
@@ -15,7 +9,7 @@ import { SiSocketdotio } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { FaLinux } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
+import { SiClickhouse } from "react-icons/si";
 
 
 const MySkills = () => {
@@ -195,29 +189,23 @@ const MySkills = () => {
           </div>
         </Col>
       </Row>
-      {/* <div style={{marginTop:"4rem", marginLeft:'20rem'}}>
+      <div style={{marginTop:"4rem", marginLeft:'20rem'}}>
         <Row>
         <Col md={1}>
-        <FaReact style={{fontSize:'2rem'}}/>
-        </Col>
-        <Col md={1}>
         <SiRedux style={{fontSize:'2rem'}}/>
-        </Col>
-
-        <Col md={1}>
-        <FaNode style={{fontSize:'2rem'}}/>
         </Col>
         <Col md={1}>
         <SiSocketdotio style={{fontSize:'2rem'}}/>
         </Col>
         <Col md={1}>
-        <FaPhp style={{fontSize:'2rem'}}/>
+        <FaDocker style={{fontSize:'2rem'}}/>
+        </Col>
+      
+        <Col md={1}>
+        <FaLinux style={{fontSize:'2rem'}}/>
         </Col>
         <Col md={1}>
-        <DiCodeigniter style={{fontSize:'2rem'}} />
-        </Col>
-        <Col md={1}>
-        <FaJs style={{fontSize:'2rem'}}/>
+        <SiClickhouse style={{fontSize:'2rem'}}/>
         </Col>
         <Col md={1}>
         <SiJquery style={{fontSize:'2rem'}}/>
@@ -226,32 +214,17 @@ const MySkills = () => {
         <SiMysql style={{fontSize:'2rem'}}/>
         </Col>
         <Col md={1}>
-        <DiMongodb style={{fontSize:'2rem'}}/>
+        <IoLogoGithub style={{fontSize:'2rem'}}/>
         </Col>
-        </Row>
-    </div> */}
-    {/* <div>
-        <Row  style={{marginTop:"4rem", marginLeft:'15rem'}}>
-        <Col md={2}>
-        <FaHtml5 style={{fontSize:'2rem'}}/>
-        </Col>
-        <Col md={2}>
-        <FaLinux style={{fontSize:'2rem'}}/>
-        </Col>
-        <Col md={2}>
-        <FaBootstrap style={{fontSize:'2rem'}}/>
-        </Col>
-        <Col md={2}>
-        <FaDocker style={{fontSize:'2rem'}}/>
-        </Col>
-        <Col md={2}>
-        <IoLogoGithub  style={{fontSize:'2rem'}}  />
-        </Col>
-        <Col md={2}>
+        <Col md={1}>
         <SiJira style={{fontSize:'2rem'}}/>
         </Col>
+        <Col md={1}>
+        <FaBootstrap style={{fontSize:'2rem'}}/>
+        </Col>
         </Row>
-        </div> */}
+    </div>
+    
      
     </div>
   );
