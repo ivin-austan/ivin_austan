@@ -4,12 +4,15 @@ import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaInstagram } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa";
+import { useLocation } from 'react-router-dom';
 
 
 
 const Footer = () => {
+  const location = useLocation();
+
   return (
-    <div className="footer">
+    <div className={`footer ${location.pathname === '/about' ?'stick-bottom':''}`}>
       <div>
         <a
           href="https://rb.gy/yflhxh"
