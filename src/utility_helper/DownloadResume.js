@@ -1,4 +1,4 @@
-import myresume from "../doc/Ivin Austan's resume.pdf";
+import myresume from "../doc/Ivin Austan's Resume.pdf";
 
 
 export const DownloadResume=()=> {
