@@ -32,7 +32,7 @@ const App = () => {
             </div>
           }
         />
-        <Route path="projects" element={<Projects />} />
+        <Route path="/projects" element={<Projects />} />
         <Route
           path="/about"
           element={
