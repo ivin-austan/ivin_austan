@@ -1,53 +1,53 @@
 .tabs {
-   color: rgb(0 0 0 / 50%);
+  color: rgb(0 0 0 / 50%);
   font-weight: 700;
   font-variation-settings: "slnt" 0;
   display: flex;
   transition: transform 0.2s;
   cursor: pointer;
- justify-content: center;
+  justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
 
-@media screen and (max-width : 550px) {
+@media screen and (max-width: 550px) {
   .mobileview {
     display: none;
   }
-  .skills, .achievestyle{
+  .skills,
+  .achievestyle {
     /* font-size: xx-large !important;
     text-align: center !important; */
     display: none;
   }
-  .myskills{
+  .myskills {
     display: none;
   }
-  .project-button{
-     display: block; /* Change display to block to move buttons onto separate lines */
+  .project-button {
+    display: block; /* Change display to block to move buttons onto separate lines */
     margin-left: auto; /* Center the button */
     margin-right: auto; /* Center the button */
     margin-bottom: 10px; /* Add some space between buttons */
   }
-  .skillsprogress{
-  margin-left: -12rem !important;
+  .skillsprogress {
+    margin-left: -12rem !important;
+  }
 }
-}
-
 
 .tabs a {
   text-decoration: none !important;
-  color:rgb(0 0 0 / 50%) !important;
+  color: rgb(0 0 0 / 50%) !important;
 }
 body {
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
 }
-.avoidlinkstyle a{
+.avoidlinkstyle a {
   font-weight: 700;
   font-size: larger;
   font-variation-settings: "slnt" 0;
   text-decoration: none !important;
-  color:rgb(0 0 0 / 50%) !important;
+  color: rgb(0 0 0 / 50%) !important;
 }
 .tabs:hover {
   transform: scale(1.1);
@@ -88,7 +88,8 @@ body {
   transition: all 0.4s ease;
   border: 1px solid transparent;
 }
-.linkedin-button,.project-button {
+.linkedin-button,
+.project-button {
   background: #474559;
   color: #ffffff;
   font-weight: bold;
@@ -110,11 +111,11 @@ body {
     margin-left: 20%;
     margin-right: 7rem;
   }
-  .project-button{
+  .project-button {
     padding: 3px 0px 4px 3px !important;
     text-align: center;
   }
-  .skill-icons{
+  .skill-icons {
     display: none;
   }
 }
@@ -170,13 +171,12 @@ body {
   font-size: 800%;
   text-align: right;
 }
-.achievestyle{
-    text-align: center;
+.achievestyle {
+  text-align: center;
   font-weight: bold;
   color: #ffffff;
   -webkit-text-stroke: 2px #dee2e6;
   font-size: 800%;
-
 }
 .myskills {
   margin-top: -6.5%;
@@ -193,7 +193,7 @@ body {
   justify-content: center;
 }
 
-.skillsprogress{
+.skillsprogress {
   margin-left: -8rem;
 }
 
@@ -233,13 +233,12 @@ h6 {
   margin-top: 40px;
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-  }
-  .stick-bottom{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-  }
+}
+.stick-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .sm-buttons {
   float: left;
   width: 50px;
@@ -264,23 +263,23 @@ h6 {
 #linkedin {
   color: #035a8a;
 }
-#facebook{
+#facebook {
   color: #0064e6;
 }
-#instagram{
-  color: #ee2a7b;;
+#instagram {
+  color: #ee2a7b;
 }
 .footer-content {
   align-items: center;
   display: flex;
 }
 .vertical-timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 100%;
-    width: 4px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
   background-color: #0064e6 !important;
 }
 .navbar {
@@ -292,68 +291,74 @@ h6 {
   background-color: #f3f5ef;
 }
 
-p{
+p {
   color: white;
 }
 .projectcontainer {
-    margin: 3% 5% 2% 4%;
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: space-between; /* Distribute items evenly along the main axis */
-    max-width: 100%; /* Ensure container doesn't exceed the width of its parent */
+  margin: 3% 5% 2% 4%;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  max-width: 100%; /* Ensure container doesn't exceed the width of its parent */
 }
 
 .projectcontainer > .cardstyle {
-    width: calc(50% - 4%); /* Two boxes per row (subtracting margins) */
-    margin-bottom: 2%; /* Adjust margin between boxes */
-    box-sizing: border-box; /* Include padding and border in the box's total width */
+  width: calc(50% - 4%); /* Two boxes per row (subtracting margins) */
+  margin-bottom: 2%; /* Adjust margin between boxes */
+  box-sizing: border-box; /* Include padding and border in the box's total width */
 }
 
-
-.projectbody{
+.projectbody {
   background-color: #baa3d8;
 }
-.cardstyle{
-  padding: 15px;  
+.cardstyle {
+  padding: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Updated box shadow */
-      margin-top: 2rem;
-    margin-left: 3rem;
-    transition: transform 0.5s ease; 
+  margin-top: 2rem;
+  margin-left: 3rem;
+  transition: transform 0.5s ease;
 }
 .cardstyle:hover {
   transform: translateY(-5px); /* Add slight lift effect on hover */
 }
-.project-title{
+.project-title {
   font-weight: 600;
-    font-size: large;
+  font-size: large;
 }
-.bio{
+.bio {
   color: rgb(0 0 0 / 50%);
-    align-items: center;
-    padding-top: 4rem;
+  align-items: center;
+  padding-top: 4rem;
 }
-.biointro{
+.biointro {
   color: black !important;
   font-weight: 600;
   padding-bottom: 2rem;
 }
-.biocontent{
-     font-weight: 600;
-    color: #494545;
+.biocontent {
+  font-weight: 600;
+  color: #494545;
   padding-bottom: 2rem;
   display: flex;
 }
-.about{
+.about {
   padding-top: 0.75rem;
 }
-.hireme{
-margin-top: 2% !important;
+.hireme {
+  margin-top: 2% !important;
 }
-.contactme{
+.contactme {
   margin-left: 15%;
-      width: 40%;
-   cursor: pointer !important;
-   border-radius: 50px !important;
-   font-weight: 700;
+  width: 40%;
+  cursor: pointer !important;
+  border-radius: 50px !important;
+  font-weight: 700;
 }
-
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-top: 4rem;
+  align-items: "center";
+  justify-content: center;
+}
