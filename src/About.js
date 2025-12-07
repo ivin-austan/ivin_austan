@@ -53,7 +53,7 @@ const About = () => {
               Fullstack Developer - React.js, PHP and Node.js
             </h4>
             <span className="biocontent">
-              3+ years experience in Web development in Emerging Technologies.
+              4+ years experience in Web development in Emerging Technologies.
             </span>
             {pairs.map((pair, index) => (
               <div key={index}>
