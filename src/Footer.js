@@ -24,7 +24,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/ivinaustana/"
+          href="https://www.linkedin.com/in/ivin-austan/"
           target="_blank"
           rel="noopener noreferrer"
           className="sm-buttons"
