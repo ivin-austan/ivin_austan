@@ -19,12 +19,11 @@ const About = () => {
     const timeDifference = currentDate.getTime() - BirthDay.getTime();
     const timeDifferenceforcarrer =
       currentDate.getTime() - carrerstart.getTime();
-   
 
     const millisecondsPerDay = 1000 * 60 * 60 * 24;
     const daysDifference = Math.floor(timeDifference / millisecondsPerDay);
     const carrerperiod = Math.floor(
-      timeDifferenceforcarrer / millisecondsPerDay
+      timeDifferenceforcarrer / millisecondsPerDay,
     );
 
     const yearsDiff = Math.floor(daysDifference / 365);
@@ -53,7 +52,7 @@ const About = () => {
               Fullstack Developer - React.js, PHP and Node.js
             </h4>
             <span className="biocontent">
-              4+ years experience in Web development in Emerging Technologies.
+              5+ years experience in Web development in Emerging Technologies.
             </span>
             {pairs.map((pair, index) => (
               <div key={index}>
@@ -61,7 +60,7 @@ const About = () => {
                   {pair.map(
                     (
                       item,
-                      index //or can destruct directly as { label, value }
+                      index, //or can destruct directly as { label, value }
                     ) => (
                       <React.Fragment key={index}>
                         <Col md={2}>{item.label}:</Col>
@@ -69,11 +68,11 @@ const About = () => {
                           {item.label === "Age"
                             ? `${calc.years} years ${calc.month} months`
                             : item.label === "Experience"
-                            ? `${calc.carrerexp} years ${calc.carrermonth} months`
-                            : item.value}
+                              ? `${calc.carrerexp} years ${calc.carrermonth} months`
+                              : item.value}
                         </Col>
                       </React.Fragment>
-                    )
+                    ),
                   )}
                 </Row>
               </div>
