@@ -148,7 +148,7 @@ const MySkills = () => {
             <ProgressBar now={html} label={`${html}%`} visuallyHidden />
           </div>
           <div className="progresscontainer">
-            <h6>CSS</h6>
+            <h6> Tailwind CSS</h6>
             <h6>{css}%</h6>
           </div>
           <div className="pr-bar">
