@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { FaLinkedin } from "react-icons/fa";
 import { Contextreact } from "./Context";
-import { Typewriter } from 'react-simple-typewriter';
+import { Typewriter } from "react-simple-typewriter";
 import { DownloadResume } from "./utility_helper/DownloadResume";
 
 const Content = () => {
@@ -40,14 +40,14 @@ const Content = () => {
           <h1 className="title">
             Hey Folks, I'm{" "}
             <span className="titleupdate">
-              <Typewriter words={mytitle.map((title)=>title
-              )}
-              loop={false}
-              cursor
-              cursorStyle='_'
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
+              <Typewriter
+                words={mytitle.map((title) => title)}
+                loop={false}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
               />
             </span>
           </h1>
@@ -61,7 +61,7 @@ const Content = () => {
             &nbsp; Download Resume
           </button>
           <a
-            href="https://www.linkedin.com/in/ivinaustana/"
+            href="https://www.linkedin.com/in/ivin-austan/"
             target="_blank"
             rel="noopener noreferrer"
             className="desc linkedin-button"
