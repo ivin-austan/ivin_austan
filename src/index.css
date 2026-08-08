@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply m-0 bg-slate-50 font-sans text-slate-900; }
+  button, a { font: inherit; }
+  button { @apply cursor-pointer; }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* The component palette uses Tailwind's dark utilities. These scoped overrides
+   make the theme switch a complete visual theme rather than only changing state. */
+[data-theme="light"] {
+  color: #111827;
+  background:
+    radial-gradient(circle at top right, #e8f1ff 0, transparent 34rem),
+    #ffffff;
+}
+
+[data-theme="light"] .app-theme { min-height: 100vh; }
+
+[data-theme="light"] .min-h-screen,
+[data-theme="light"] .bg-slate-950 {
+  background-color: transparent !important;
+}
+
+[data-theme="light"] .bg-slate-900,
+[data-theme="light"] .bg-slate-900\/60,
+[data-theme="light"] .bg-slate-900\/85 {
+  background-color: #ffffff !important;
+}
+
+[data-theme="light"] .bg-slate-900\/60 { background-color: #f8fafc !important; }
+
+[data-theme="light"] .from-slate-800,
+[data-theme="light"] .from-slate-900,
+[data-theme="light"] .to-slate-900 {
+  --tw-gradient-from: #ffffff var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: #f1f5f9 var(--tw-gradient-to-position) !important;
+}
+
+[data-theme="light"] .text-slate-50,
+[data-theme="light"] .text-white { color: #111827 !important; }
+[data-theme="light"] .text-slate-200,
+[data-theme="light"] .text-slate-300 { color: #334155 !important; }
+[data-theme="light"] .text-slate-400 { color: #64748b !important; }
+[data-theme="light"] .text-slate-500 { color: #64748b !important; }
+[data-theme="light"] .text-blue-100,
+[data-theme="light"] .text-indigo-100 { color: #334155 !important; }
+
+[data-theme="light"] .border-white\/10,
+[data-theme="light"] .border-white\/15,
+[data-theme="light"] .border-white\/20,
+[data-theme="light"] .border-white\/25 { border-color: #dbe3ee !important; }
+
+[data-theme="light"] .bg-white\/5 { background-color: #ffffff !important; }
+[data-theme="light"] .bg-slate-950\/90,
+[data-theme="light"] .bg-slate-950\/70 { background-color: #ffffff !important; }
+[data-theme="light"] .shadow-black\/20,
+[data-theme="light"] .shadow-black\/50 { --tw-shadow-color: rgb(15 23 42 / 0.08) !important; }
+
+[data-theme="light"] .shadow-2xl,
+[data-theme="light"] .shadow-xl { --tw-shadow-color: rgb(15 23 42 / 0.10); }
+
+/* Keep the call-to-action intentionally dark: it gives the light layout a
+   strong focal point and preserves reliable text contrast. */
+[data-theme="light"] .contact-card {
+  color: #ffffff;
+  background-image: linear-gradient(135deg, #0f3b71 0%, #312e81 100%) !important;
+  box-shadow: 0 24px 50px rgb(30 64 175 / 0.22);
+}
+
+[data-theme="light"] .contact-card h2 { color: #ffffff !important; }
+[data-theme="light"] .contact-card .text-slate-300 { color: #dbeafe !important; }
+[data-theme="light"] .contact-card .text-cyan-200 { color: #a5f3fc !important; }
+[data-theme="light"] .contact-card a { color: #0f172a !important; }
+
+/* Premium accent system: blue communicates primary actions; teal and emerald
+   handle supporting emphasis and positive status without visual noise. */
+[data-theme="light"] .text-violet-300,
+[data-theme="light"] .text-violet-400 { color: #0f766e !important; }
+[data-theme="light"] .bg-violet-700\/20 { background-color: rgb(37 99 235 / 0.10) !important; }
+[data-theme="light"] .to-violet-400,
+[data-theme="light"] .to-violet-500,
+[data-theme="light"] .to-violet-950\/70,
+[data-theme="light"] .to-violet-950 {
+  --tw-gradient-to: #0f766e var(--tw-gradient-to-position) !important;
+}
+[data-theme="light"] .hover\:border-violet-400\/60:hover { border-color: rgb(13 148 136 / 0.65) !important; }
+
+[data-theme="light"] .bg-blue-500\/25 { background-color: rgb(37 99 235 / 0.10) !important; }
+[data-theme="light"] .border-cyan-300\/60 { border-color: rgb(37 99 235 / 0.45) !important; }
+[data-theme="light"] .text-cyan-200,
+[data-theme="light"] .text-cyan-300 { color: #0f766e !important; }
+[data-theme="light"] .text-emerald-400 { color: #059669 !important; }
+
+[data-theme="light"] .projects-page {
+  background: #ffffff !important;
+}
+
+[data-theme="light"] .projects-page header > div {
+  background-image: linear-gradient(135deg, #eff6ff 0%, #ecfdf5 100%) !important;
+  border-color: #dbeafe !important;
+}
+
+[data-theme="light"] .projects-page .bg-slate-950\/90,
+[data-theme="light"] .projects-page .bg-slate-950\/70 {
+  background-color: #f8fafc !important;
+}
+
+[data-theme="light"] .projects-page .text-white,
+[data-theme="light"] .projects-page .text-slate-50 { color: #111827 !important; }
+
+/* Retain the same accent language if visitors use the optional dark toggle. */
+.text-violet-300,
+.text-violet-400 { color: #14b8a6 !important; }
+.to-violet-400,
+.to-violet-500,
+.to-violet-950\/70,
+.to-violet-950 { --tw-gradient-to: #0f766e var(--tw-gradient-to-position) !important; }
+.bg-violet-700\/20 { background-color: rgb(37 99 235 / 0.14) !important; }
+.hover\:border-violet-400\/60:hover { border-color: rgb(20 184 166 / 0.65) !important; }
+
+.developer-card {
+  animation: developer-float 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.typing-cursor {
+  animation: cursor-blink 0.9s steps(1, end) infinite;
+}
+
+@keyframes developer-float {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(-0.4deg); }
+  50% { transform: translate3d(10px, -12px, 0) rotate(0.4deg); }
+}
+
+@keyframes cursor-blink {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .developer-card, .typing-cursor { animation: none; }
 }

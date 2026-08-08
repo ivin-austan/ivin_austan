@@ -1,31 +1,28 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 import { Container, Navbar, Col } from "react-bootstrap";
 import ivin from "./ivin.jpg";
-import { Contextreact } from './Context';
-import { Link, useNavigate } from 'react-router-dom';
-import ReactGA from 'react-ga4';
-ReactGA.initialize('G-4X6SK1YDXC');
+import { Contextreact } from "./Context";
+import { Link, useNavigate } from "react-router-dom";
+import ReactGA from "react-ga4";
+ReactGA.initialize("G-4X6SK1YDXC");
 
 const Header = () => {
+  const { scroll } = useContext(Contextreact);
+  const navigate = useNavigate();
 
-  const {scroll} = useContext(Contextreact);
- const navigate = useNavigate();
-
- const scrolltoSkillsandnavigate = (section) =>{
-
-  ReactGA.event({
-    category: 'Skills',
-    action: 'Clicked this button'
-  });
-  setTimeout(() => {
+  const scrolltoSkillsandnavigate = (section) => {
+    ReactGA.event({
+      category: "Skills",
+      action: "Clicked this button",
+    });
+    setTimeout(() => {
       scrolltoSkills(section);
     }, 200); // Adjust the delay time as needed
 
     // Navigate to the home route
-    navigate('/', { scrollBehavior: 'smooth' });
+    navigate("/", { scrollBehavior: "smooth" });
   };
- 
- 
+
   const scrolltoSkills = (section) => {
     const skillselection =
       section === "achievements"
@@ -37,21 +34,21 @@ const Header = () => {
   };
   const styles = {
     iconContainer: {
-        position: 'relative',
-        display: 'inline-block',
-        width: '34px', // Adjust size as needed
-        height: '34px', // Adjust size as needed
+      position: "relative",
+      display: "inline-block",
+      width: "34px", // Adjust size as needed
+      height: "34px", // Adjust size as needed
     },
     image: {
-        width: '90%',
-        height: '100%',
-        borderRadius: '50%', // Make the image circular
-        objectFit: 'fill',  // Ensure the image covers the element
-        position: 'absolute',
-        top: '0',
-        left: '0',
+      width: "90%",
+      height: "100%",
+      borderRadius: "50%", // Make the image circular
+      objectFit: "fill", // Ensure the image covers the element
+      position: "absolute",
+      top: "0",
+      left: "0",
     },
-};
+  };
   return (
     <>
       <Navbar sticky="top" className={scroll ? "navbar scrolled" : "navbar"}>
@@ -62,9 +59,9 @@ const Header = () => {
             style={{ textAlign: "right", paddingRight: "2rem" }}
           >
             <Link to="/">
-            <div style={styles.iconContainer}>
-            <img src={ivin} alt="User" style={styles.image} />
-        </div>
+              <div style={styles.iconContainer}>
+                <img src={ivin} alt="User" style={styles.image} />
+              </div>
             </Link>
           </Col>
           <Col md={4} className="avoidlinkstyle">
@@ -74,8 +71,8 @@ const Header = () => {
             <Link to="/about">About Me</Link>
           </Col>
 
-          <Col md={1} className="tabs">
-            <Link to="/projects">Projects</Link>
+          <Col md={1} className="tabs" onClick={scrolltoSkillsandnavigate}>
+            Projects
           </Col>
 
           <Col
@@ -97,6 +94,6 @@ const Header = () => {
       </Navbar>
     </>
   );
-}
+};
 
 export default Header;
