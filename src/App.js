@@ -207,7 +207,13 @@ function Home() {
             <span className="mr-2 font-mono text-[10px] uppercase tracking-wider text-slate-500">
               Currently at
             </span>
-            Galfar Engineering &amp; Contracting WLL Emirates
+            <a
+              href="https://www.galfaremirates.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Galfar Engineering &amp; Contracting WLL Emirates
+            </a>
           </p>
           <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-700 shadow-sm">
             <i className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
@@ -248,7 +254,7 @@ function Home() {
         </div>
         <div className="relative mx-auto  w-full max-w-xl">
           <div className="absolute left-5 top-8 h-80 w-4/5 rounded-full bg-blue-600/30 blur-3xl" />
-          <div className="developer-card absolute left-0 top-2 w-[90%] overflow-hidden rounded-2xl border border-blue-300/30 bg-slate-950/90 shadow-2xl">
+          <div className="developer-card absolute left-0 top-2 w-[90%] overflow-hidden rounded-2xl border border-blue-300/30 bg-slate-950/90 shadow-2xl hidden sm:block">
             <div className="flex h-11 items-center gap-2 border-b border-white/10 bg-white/5 px-4">
               <i className="h-2 w-2 rounded-full bg-rose-400" />
               <i className="h-2 w-2 rounded-full bg-amber-400" />
@@ -264,7 +270,7 @@ function Home() {
               </span>
             </pre>
           </div>
-          <div className="absolute bottom-0 right-0 overflow-hidden rounded-[80px_80px_16px_16px]">
+          <div className="relative sm:absolute  bottom-0 right-0  overflow-hidden rounded-[80px_80px_16px_16px]">
             <img
               className="h-96 w-76 object-cover object-top"
               src="/final.png"
