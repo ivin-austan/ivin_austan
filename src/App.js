@@ -293,12 +293,43 @@ function Home() {
             — from polished interfaces to reliable systems behind them.
           </p>
           <div className="text-sm leading-7 text-slate-400">
-            Currently a Software Developer at Galfar Engineering &amp;
-            Contracting WLL Emirates, I build and improve enterprise
-            applications that make everyday work simpler and more effective.
+            <ul className="list-disc space-y-3 pl-5 marker:text-blue-400">
+              <li>
+                <span className="text-white">
+                  Enterprise Application Development
+                </span>{" "}
+                — Build scalable business applications using React.js, Node.js,
+                and PostgreSQL.
+              </li>
+
+              <li>
+                <span className="text-white">Workflow Automation</span> —
+                Designed multi-level approvals, rule-based routing, SLA
+                monitoring, and automated escalations.
+              </li>
+
+              <li>
+                <span className="text-white">Process Digitization</span> —
+                Replaced manual processes with configurable digital workflows
+                across multiple departments.
+              </li>
+
+              <li>
+                <span className="text-white">Enterprise Features</span> —
+                Implemented audit trails, document management, notifications,
+                and real-time process tracking.
+              </li>
+
+              <li>
+                <span className="text-white">Business Impact</span> — Improved
+                operational visibility, reduced manual intervention, and
+                streamlined complex approval processes.
+              </li>
+            </ul>
             <div className="mt-7 flex gap-6 border-t border-white/10 pt-6">
               {[
                 ["5+", "Years building"],
+                ["3+", "Years building"],
                 ["20+", "Projects shipped"],
                 ["UAE", "Based in Abu Dhabi"],
               ].map(([a, b]) => (

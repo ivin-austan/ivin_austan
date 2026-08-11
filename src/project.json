@@ -3,7 +3,7 @@
   "id": 0,
   "title": "Galfar Webapp",
   "tech": ["React.js", "Node.js", "Express.js", "PostgreSQL", "Azure"],
- "description": "Independently owned the end-to-end development of an enterprise workflow automation platform, from requirements gathering and architecture to development, deployment, and documentation. Delivered scalable React.js and Node.js solutions with PostgreSQL, automating approval workflows, document management, email notifications, and real-time process tracking across multiple business departments.",
+ "description": "Independently led the end-to-end development of a configurable enterprise workflow and approval platform, owning the solution from requirements gathering and system architecture through development, deployment, and documentation. Architected and delivered scalable React.js, Node.js, and PostgreSQL solutions supporting multi-level approvals, rule-based workflow routing, SLA monitoring, automated escalations, audit trails, document management, email notifications, and real-time process tracking across multiple business departments. Streamlined complex business processes by digitizing and automating approvals, improving operational visibility, reducing manual intervention, and enabling scalable workflow management.",
   "applink": "http://intranet.galfaremirates.com/",
   "bgcolor": "#4ba74b",
   "image":"https://www.gaterzone.com/wp-content/uploads/2025/04/approval01.png"
