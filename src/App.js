@@ -328,10 +328,13 @@ function Home() {
             </ul>
             <div className="mt-7 flex gap-6 border-t border-white/10 pt-6">
               {[
-                ["5+", "Years building"],
-                ["3+", "Years building"],
-                ["20+", "Projects shipped"],
-                ["UAE", "Based in Abu Dhabi"],
+                [
+                  ["5+", "Years Engineering"],
+                  ["20+", "Projects Delivered"],
+                  ["3+", "Companies"],
+                  ["5+", "Clients"],
+                  ["2", "Countries"],
+                ],
               ].map(([a, b]) => (
                 <div key={a}>
                   <b className="block text-xl text-white">{a}</b>
