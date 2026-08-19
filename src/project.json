@@ -2,7 +2,7 @@
   {
   "id": 0,
   "title": "Galfar Webapp",
-  "tech": ["React.js", "Node.js", "Express.js", "PostgreSQL", "Azure"],
+  "tech": ["React.js", "Node.js", "Express.js","Tailwind CSS", "PostgreSQL", "Azure","cron jobs", "Email Alerts"],
  "description": "Independently led the end-to-end development of a configurable enterprise workflow and approval platform, owning the solution from requirements gathering and system architecture through development, deployment, and documentation. Architected and delivered scalable React.js, Node.js, and PostgreSQL solutions supporting multi-level approvals, rule-based workflow routing, SLA monitoring, automated escalations, audit trails, document management, email notifications, and real-time process tracking across multiple business departments. Streamlined complex business processes by digitizing and automating approvals, improving operational visibility, reducing manual intervention, and enabling scalable workflow management.",
   "applink": "http://intranet.galfaremirates.com/",
   "bgcolor": "#4ba74b",
@@ -11,25 +11,36 @@
 {
   "id": 1,
   "title": "Everest ",
-  "tech": ["PHP", "CodeIgniter", "MySQL", "JavaScript", "Azure"],
+  "tech": ["PHP", "CodeIgniter", "MySQL", "JavaScript","cron jobs"],
   "description": "Worked on Everest, a globally used email validation and deliverability platform, enhancing product functionality and user experience. Developed features, fixed 50+ production issues, optimized application stability, and contributed across frontend, backend, and database layers. Supported releases, PHP upgrades, monitoring improvements, and agile collaboration with engineering and product teams.",
   "bgcolor": "#4ba74b",
   "image":"https://storage.ghost.io/c/33/68/33684c00-f023-423d-a7f0-5786c0043411/content/images/2025/10/validity-email-delivery-tool.png"
 
 },
+  {
+    "id": 2,
+    "title": "Techno Computers",
+    "tech": ["React.js", "Node.js", "Mongo DB", "Express.js","Payment (Razonrpay)"],
+    "description": " E-commerce web application for computer accessories and hardwares which is in real-time use. They can buy products and get delivery. Razorpay payment API is integrated with this application for making the live payment easier.",
+    "codelink": "https://github.com/Tech-Spark-dev/Techno-Computers",
+    "applink": "https://technocomputers.org.in/",
+    "bgcolor": "#2563EB",
+     "image":"https://cdn.dribbble.com/userupload/16134786/file/original-6261c0a4e4338bccf3612124e9d59663.jpg?resize=1504x1128&vertical=center"
+
+  },
 {
-  "id": 2,
+  "id": 3,
   "title": "Millow (Inspired By Zillow)",
-  "tech": ["React.js", "Node.js", "Mongo DB", "Express.js"],
+  "tech": ["React.js", "Node.js", "Mongo DB","Tailwind CSS", "Express.js"],
   "description": " Realtime chatting application created using React js for frontend, Node for runtime, express for backend and MongoDB for database. Additionally socket.io for bidirectional and event-based communication between a client and a server. We can make realtime communications with anyone around the world.",
   "codelink": "https://github.com/ivin-austan/millow",
   "applink": "https://millow-frontend.onrender.com/",
   "bgcolor": "#FF4D4D",
-    "image":"https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/2/2020/09/Zillow_Hero_Transparent-download-740486.png"
+  "image":"https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/2/2020/09/Zillow_Hero_Transparent-download-740486.png"
 
 },
   {
-    "id": 3,
+    "id": 4,
     "title": "InnovateHub",
     "tech": ["React.js", "Node.js", "Mongo DB", "Express.js"],
 "description": "A real-time technology discussion platform that enables developers and tech enthusiasts to share ideas, discuss programming topics, and build a collaborative community. Developed using React.js, Node.js, Express.js, and MongoDB with a focus on responsive UI, dynamic content, and seamless user interactions.",
@@ -48,33 +59,24 @@
   },
   {
     "id": 5,
-    "title": "Techno Computers",
-    "tech": ["React.js", "Node.js", "Mongo DB", "Express.js"],
-    "description": " E-commerce web application for computer accessories and hardwares which is in real-time use. They can buy products and get delivery. Razorpay payment API is integrated with this application for making the live payment easier.",
-    "codelink": "https://github.com/Tech-Spark-dev/Techno-Computers",
-    "applink": "https://technocomputers.org.in/",
-    "bgcolor": "#2563EB"
-  },
-  {
-    "id": 6,
     "title": "Shopping Cart",
-    "tech": ["React.js", "HTML", "CSS", "Bootstrap"],
+    "tech": ["React.js", "HTML", "CSS"],
     "description": "This shopping cart application is a web-based tool that allows users to browse products, add them to a virtual cart, and proceed with the purchase. I designed and implemented an application using React.js that seamlessly handles the features of this app. Additionally, the application dynamically updates the cart summary, showing product details like name, quantity, price, and total cost, as users interact with it.",
     "codelink": "https://github.com/Ivin1998/Shopping_cart",
     "applink": "https://ivin-shop.netlify.app/",
     "bgcolor": "#0F766E"
   },
   {
-    "id": 7,
+    "id": 6,
     "title": "Customer Relationship Management App",
-    "tech": ["Core PHP", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    "tech": ["Core PHP", "HTML", "CSS", "JavaScript"],
     "description": "This customer relationship management (CRM) app that allows businesses to manage user records, track users and their records, and generate reports. Have separate logins for normal users and for super admins to manage the users and their details. Admin can able to edit, view and download the reports.",
     "codelink": "https://github.com/Ivin1998/CRM_IN_CORE_PHP",
     "applink": "",
     "bgcolor": "#4ba74b"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "Ivin's Portfolio",
     "tech": ["React.js", "HTML", "CSS", "React-Bootstrap"],
     "description": " Realtime chatting application created using React js for frontend, Node for runtime, express for backend and MongoDB for database. Additionally socket.io for bidirectional and event-based communication between a client and a server. We can make realtime communications with anyone around the world.",

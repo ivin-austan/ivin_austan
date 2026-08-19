@@ -288,57 +288,106 @@ function Home() {
           title="Built for the work behind the work."
         />
         <div className="grid gap-12 md:grid-cols-2">
-          <p className="text-2xl leading-9 tracking-tight">
-            I bring product thinking and engineering discipline to every project
-            — from polished interfaces to reliable systems behind them.
-          </p>
+          <div>
+            <p className="text-2xl leading-9 tracking-tight">
+              I bring product thinking and engineering discipline to every
+              project — from polished interfaces to reliable systems behind
+              them.
+            </p>
+
+            <ul className="mt-6 space-y-4 text-lg leading-7">
+              <li>
+                <strong>5+ Years in Software Engineering</strong> — Enterprise,
+                SaaS, and web applications.
+              </li>
+
+              <li>
+                <strong>Frontend to Backend</strong> — Comfortable working
+                across UI, APIs, business logic, databases, and deployment
+                workflows.
+              </li>
+
+              <li>
+                <strong>Enterprise & SaaS Experience</strong> —
+                Business-critical and globally used products.
+              </li>
+
+              <li>
+                <strong>Production Experience</strong> — Debugging, deployments,
+                monitoring, and reliability.
+              </li>
+
+              <li>
+                <strong>Business & Product Collaboration</strong> — Turning
+                business requirements into practical solutions.
+              </li>
+
+              <li>
+                <strong>Now in Abu Dhabi</strong> — Building and solving
+                challenging engineering problems.
+              </li>
+            </ul>
+          </div>
+
           <div className="text-sm leading-7 text-slate-400">
             <ul className="list-disc space-y-3 pl-5 marker:text-blue-400">
               <li>
                 <span className="text-white">
                   Enterprise Application Development
                 </span>{" "}
-                — Build scalable business applications using React.js, Node.js,
-                and PostgreSQL.
+                — Architected and delivered scalable React.js, Node.js, and
+                PostgreSQL applications supporting business-critical workflows
+                and globally used software products.
               </li>
 
               <li>
-                <span className="text-white">Workflow Automation</span> —
-                Designed multi-level approvals, rule-based routing, SLA
-                monitoring, and automated escalations.
+                <span className="text-white">
+                  Workflow & Process Automation
+                </span>{" "}
+                — Designed multi-level approval workflows, rule-based routing,
+                SLA monitoring, automated escalations, audit trails, document
+                management, PDF generation and merging, email alerts, and
+                real-time process tracking.
               </li>
 
               <li>
-                <span className="text-white">Process Digitization</span> —
-                Replaced manual processes with configurable digital workflows
-                across multiple departments.
+                <span className="text-white">
+                  Production Engineering & Reliability
+                </span>{" "}
+                — Resolved 50+ high-priority production issues at CapeStart and
+                investigated defects across UI, service, and data layers to
+                improve application reliability and reduce support workload.
               </li>
 
               <li>
-                <span className="text-white">Enterprise Features</span> —
-                Implemented audit trails, document management, notifications,
-                and real-time process tracking.
+                <span className="text-white">Full-Stack Development</span> —
+                Built and enhanced front-end interfaces, REST APIs, backend
+                services, database integrations, and reusable application
+                components across React.js, Node.js, PHP, PostgreSQL, MongoDB,
+                and MySQL.
               </li>
 
               <li>
-                <span className="text-white">Business Impact</span> — Improved
-                operational visibility, reduced manual intervention, and
-                streamlined complex approval processes.
+                <span className="text-white">
+                  Product & Cross-Functional Delivery
+                </span>{" "}
+                — Collaborated with product managers, business stakeholders, and
+                engineering teams to define requirements, implement features,
+                validate releases, troubleshoot issues, and deliver stable
+                production software.
               </li>
             </ul>
-            <div className="mt-7 flex gap-6 border-t border-white/10 pt-6">
+            <div className="mt-7 ml-5 flex gap-6 border-t border-white/10 pt-6">
               {[
-                [
-                  ["5+", "Years Engineering"],
-                  ["20+", "Projects Delivered"],
-                  ["3+", "Companies"],
-                  ["5+", "Clients"],
-                  ["2", "Countries"],
-                ],
-              ].map(([a, b]) => (
-                <div key={a}>
-                  <b className="block text-xl text-white">{a}</b>
-                  <span className="text-[10px] text-slate-500">{b}</span>
+                ["5+", "Years Engineering"],
+                ["15+", "Projects Delivered"],
+                ["3+", "Companies"],
+                ["5+", "Clients"],
+                ["2", "Countries"],
+              ].map(([value, label]) => (
+                <div key={label}>
+                  <b className="block text-2xl  text-white">{value}</b>
+                  <span className="text-[10px]  text-slate-500">{label}</span>
                 </div>
               ))}
             </div>
