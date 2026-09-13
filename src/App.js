@@ -217,7 +217,7 @@ function Home() {
           </p>
           <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-700 shadow-sm">
             <i className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
-            Open to new opportunities (UAE · India)
+            Open to collaborations & opportunities (UAE · India)
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
             <button className={primary} onClick={goProjects}>
