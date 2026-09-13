@@ -1,4 +1,4 @@
-import myresume from "../doc/Ivin's_Resume.pdf";
+import myresume from "../doc/Ivin_Resume.pdf";
 
 export const DownloadResume = () => {
   const filePath = myresume; // Path to your resume file in the folder
